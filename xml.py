@@ -30,5 +30,5 @@ for directorio in directorios:
 
 ident=raw_input("Introduce el identificador del local: ")
 for directorio in directorios:
-	if directorio.find("identificador").text==ident:
+	if directorio.find["identificador"].text==ident:
 		print "Nombre: %s"%directorio.find("nombre").text
