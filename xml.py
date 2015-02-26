@@ -27,3 +27,8 @@ print "\n"
 print "Identificadores de los locales de artesania"
 for directorio in directorios:
 	print "Identificador: %s"%directorio.find("identificador").text
+
+ident=raw_input("Introduce el identificador del local: ")
+for directorio in directorios:
+	if directorio.find("identificador").text==ident:
+		print "Nombre: %s"%directorio.find("nombre").text
