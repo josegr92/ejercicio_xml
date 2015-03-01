@@ -33,7 +33,7 @@ for directorio in directorios:
 	if directorio.find("identificador").text==ident:
 		print "Nombre: %s"%directorio.find("nombre").text
 
-nom=raw_input("Introduce el nombre del local: ")
+nom=raw_input("Introduce el nombre del local: ") #No introducir nombres que tenga acentos o ñ porque da error de codificacion
 for directorio in directorios:
 	if directorio.find("nombre").text==nom:
 		print "Telf: %s"%directorio.find("telefono").text
